@@ -1,3 +1,14 @@
+.root {
+  --mainColor: #08A6E4;
+  --mainShadowColor: rgba(7, 172, 230, .16);
+  --redAccent: #FB3B64;
+  --greenAccent: #55DFB4;
+  --black: #000000;
+  --grey:#A5A5A5;
+  --lightGrey: #F7F7F7;
+  --white: #FFFFFF;
+}
+
 .container {
     margin: 0 auto;
     width: 1352px;
@@ -100,7 +111,8 @@
 
 .containerMainSellMore a {
  padding: 22px 157px;
- background-color: lightseagreen;
+ background-color: #08A6E4;
+ box-shadow: 5px 10px 14px #07ACE629;
  border-radius: 40px;
  text-align: center;
  text-decoration: none;
@@ -108,4 +120,5 @@
  font-family: 'Open Sans', sans-serif;
 font-weight: bold;
 letter-spacing: 0;
+
 }
