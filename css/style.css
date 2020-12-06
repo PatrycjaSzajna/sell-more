@@ -132,6 +132,8 @@ body {
 
 .numbers {
   display: flex;
+  width: 68%;
+  justify-content: space-evenly;
 }
 .numbers .circle {
   position: relative;
@@ -149,11 +151,13 @@ body {
   align-items: center;
 }
 
+/* ----dodawanie kolorow i ikonek dla kółek----- */
+
 .red {
   background-color: var(--redAccent);
 }
 
-.red::after {
+.numbers .red::after {
   content: "";
   display: block;
   position: absolute;
@@ -168,8 +172,242 @@ body {
   background-color: var(--mainColor);
 }
 
+.numbers .blue::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../assets/Eye.svg);
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 52px;
+  right: -29px;
+  bottom: -2px;
+}
+
 .green {
   background-color: var(--greenAccent);
 }
 
+.numbers .green::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../assets/Catalog.svg);
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 54px;
+  right: -20px;
+  bottom: 6px;
+}
 
+/* ------pogrubiłam liczby ------*/
+
+.numbers > .redHead .bold-text {
+  text-align: center;
+  font-family: var(--fontRaleway);
+  font-weight: bold;
+  letter-spacing: 5.96px;
+  color: var(--black);
+  width: 116px;
+  height: 24px;
+}
+
+.numbers > .blueEye .bold-text {
+  text-align: center;
+  font-family: var(--fontRaleway);
+  font-weight: bold;
+  letter-spacing: 5.96px;
+  color: var(--black);
+  width: 116px;
+  height: 24px;
+}
+
+.numbers > .greenPost .bold-text {
+  text-align: center;
+  font-family: var(--fontRaleway);
+  font-weight: bold;
+  letter-spacing: 5.96px;
+  color: var(--black);
+  width: 116px;
+  height: 24px;
+}
+
+/* ------dodałam kolor light grey pod liczbami -------*/
+
+.redHead > .light-grey-text {
+  display: flex;
+  font-family: var(--fontRaleway);
+  font-weight: normal;
+  color: var(--grey);
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.blueEye > .light-grey-text {
+  display: flex;
+  font-family: var(--fontRaleway);
+  font-weight: normal;
+  color: var(--grey);
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.greenPost > .light-grey-text {
+  display: flex;
+  font-family: var(--fontRaleway);
+  font-weight: normal;
+  color: var(--grey);
+  text-align: center;
+  letter-spacing: 0;
+}
+
+/* -----sekcja BENEFITS ----------*/
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  background-color: var(--lightGrey);
+  flex-direction: column;
+  align-items: center;
+}
+
+.blocks-container {
+  background-color: var(--white);
+  box-sizing: border-box;
+  padding: 30px;
+  height: 370px;
+}
+
+.blocks-container:nth-child(2) {
+  background-color: var(--white);
+  box-sizing: border-box;
+  padding: 30px;
+  height: 370px;
+  flex-direction: row-reverse;
+
+}
+.blocks-container.laptop {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.blocks-container.laptop .left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  /* box-sizing: border-box; */
+  /* padding-left: 60px;
+} */
+}
+
+.blocks-container.laptop h2 {
+  font-size: 36px;
+  color: var(--black);
+  text-align: left;
+  /* margin: 20px;
+  padding: 33px; */
+}
+
+.blocks-container.laptop p {
+  font-family: var(--fontSans);
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0;
+  /* margin: 20px;
+  padding: 33px; */
+}
+
+
+/* pozycjonowanie laptopa i kwadratu */
+
+.laptop-img {
+  width: 162%;
+  position: absolute;
+  transform: rotate(-45deg);
+  right: -68px;
+  top: 72px;
+}
+
+.square {
+  background-color: var(--redAccent);
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  transform: rotate(45deg);
+}
+
+.line {
+  display: block;
+  width: 60%;
+  height: 4px;
+  border-radius: 50px;
+}
+/* .line.blue {
+ 
+} */
+
+.left,
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* pozycjonowanie telefonu  */
+
+.blocks-container.telephone .left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  /* box-sizing: border-box; */
+  /* padding-left: 60px;
+} */
+}
+
+.blocks-container.telephone {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.blocks-container.telephone h2 {
+  font-size: 36px;
+  color: var(--black);
+  text-align: start;
+  /* margin: 20px;
+  padding: 33px; */
+}
+
+.blocks-container.telephone p {
+  font-family: var(--fontSans);
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  text-align: -webkit-left;
+  /* margin: 20px;
+  padding: 33px; */
+}
+
+.circle-telephone {
+  background-color: var(--mainColor);
+  width: 23%;
+  border-radius: 50%;
+  position: absolute;
+
+}
+
+.telephone-img {
+  width: 130%;
+  position: relative;
+  top: 35px;
+  left: 18px;
+}
+
+.telephone .right {
+  align-items: center;
+}
