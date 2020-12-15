@@ -1,0 +1,49 @@
+
+  /* Stopka */
+  
+  .footer-container {
+    width: 100%;
+    box-shadow: 0px -4px 40px #00000029;
+    margin-top: 22px;
+  }
+  
+  .footer {
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    width: 1352px;
+    justify-content: space-between;
+    height: 89px;
+    align-items: center;
+  }
+  
+  .logo-footer{
+    text-decoration: none;
+    font-family: var(--fontRaleway);
+    font-size: 26px;
+    font-weight: lighter;
+    color: var(--mainColor);
+  
+  }
+  
+  
+  .logo-footer p {
+    justify-content: space-between;
+  }
+  
+  
+  .footer .logo-rights .logo-footer{
+   
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .footer-images {
+    margin-right: 5px;
+  
+  }
+  .footer-images .twitter-img {
+    margin-right: 22px;
+  
+    
+  }
