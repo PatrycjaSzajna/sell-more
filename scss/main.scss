@@ -1,4 +1,5 @@
 @import "generic/_reset";
+@import "generic/variables";
 
 :root {
   --mainColor: #08a6e4;
@@ -20,5 +21,6 @@
 @import "elements/content";
 @import "elements/content.mobile";
 @import "elements/footer";
+@import "elements/footer.mobile"
 
 

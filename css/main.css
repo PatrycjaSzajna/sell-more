@@ -408,6 +408,7 @@ header {
   height: 70px;
   box-shadow: 0px 3px 6px #00000029;
   width: 100%;
+  position: relative;
 }
 
 .logo {
@@ -449,6 +450,81 @@ header {
   border-bottom: 4px solid #08a6e4;
 }
 
+@media (max-width: 840px) {
+  .page-nav {
+    position: relative;
+    transform: translateX(170px);
+    transition: transform 0.3s 0.1s ease-in-out;
+  }
+  .page-nav .page-nav-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+    top: 72px;
+  }
+  .page-nav .page-nav-list li {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    background-color: white;
+  }
+  .page-nav .page-nav-list li a:hover {
+    color: black;
+    border-bottom: none;
+  }
+
+  #menu {
+    visibility: hidden;
+  }
+
+  .menu-label,
+.menu-label::before,
+.menu-label::after {
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #08a6e4;
+    transition: 0.6s;
+  }
+
+  .menu-label {
+    cursor: pointer;
+    top: 50%;
+    right: 5%;
+    margin-left: -50px;
+    margin-top: -7.5px;
+  }
+
+  .menu-label::before {
+    content: "";
+    transform: translateY(-15px);
+  }
+
+  .menu-label::after {
+    content: "";
+    transform: translateY(15px);
+  }
+
+  #menu:checked + .menu-label {
+    width: 40px;
+  }
+
+  #menu:checked + .menu-label::before {
+    transform: rotate(45deg) translate(0);
+  }
+
+  #menu:checked + .menu-label::after {
+    transform: rotate(-45deg) translate(0);
+  }
+
+  #menu:checked ~ .page-nav {
+    transform: translateX(0);
+  }
+}
 .containerMainSellMore {
   display: flex;
   width: 100%;
@@ -1143,12 +1219,21 @@ p {
   }
   .blocks-container.trumpet {
     margin-bottom: 0;
+    flex-direction: column;
   }
   .blocks-container.trumpet .left {
     width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 49px;
+    padding-bottom: 52px;
+  }
+  .blocks-container.trumpet .left h2 {
+    margin-left: 23px;
   }
   .blocks-container.trumpet .right {
     width: 100%;
+    margin: 0;
   }
   .blocks-container .left {
     margin-top: 64px;
@@ -1186,10 +1271,22 @@ p {
     background-color: white;
   }
 }
+@media (max-width: 841px) {
+  .line {
+    display: none;
+  }
+}
 @media (max-width: 650px) {
   .form-icons {
     display: flex;
     flex-direction: column;
+  }
+  .form-icons .info-email {
+    margin-bottom: 19px;
+    margin-left: unset;
+  }
+  .form-icons .telephone-number {
+    margin-left: unset;
   }
 }
 @media (max-width: 470px) {
@@ -1223,7 +1320,7 @@ p {
   margin: 0 auto;
   display: flex;
   /* flex-direction: column; */
-  width: 1352px;
+  max-width: 1352px;
   justify-content: space-between;
   height: 89px;
   align-items: center;
@@ -1252,5 +1349,19 @@ p {
 
 .footer-images .twitter-img {
   margin-right: 22px;
+}
+
+@media (max-width: 1374px) {
+  .footer-container {
+    background-color: white;
+    margin-top: 35px;
+  }
+
+  .footer {
+    padding-left: 10px;
+  }
+  .footer .footer-images {
+    padding-right: 17px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
