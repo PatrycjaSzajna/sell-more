@@ -3,6 +3,7 @@
     position: relative;
     transform: translateX(170px);
     transition: transform 0.3s 0.1s ease-in-out;
+  
 
     .page-nav-list {
       display: flex;
@@ -30,6 +31,7 @@
 
   #menu {
     visibility: hidden;
+   
   }
   .menu-label,
   .menu-label::before,

@@ -397,6 +397,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  overflow: hidden;
 }
 
 main.container {
@@ -448,6 +449,10 @@ header {
 .page-nav .page-nav-list li a:hover {
   color: black;
   border-bottom: 4px solid #08a6e4;
+}
+
+#menu {
+  display: none;
 }
 
 @media (max-width: 840px) {
@@ -1090,6 +1095,8 @@ header {
 .form-icons .telephone-number {
   font-size: 16px;
   font-family: var(--fontSans);
+  font-size: 12px;
+  color: #95989a;
 }
 
 .left-side-form {
@@ -1307,6 +1314,14 @@ p {
   }
   .numbers > div {
     margin: 30px auto;
+  }
+
+  .form-container h1 {
+    font-size: 28px;
+  }
+
+  .form-container .send-button {
+    align-self: center;
   }
 }
 /* Stopka */
