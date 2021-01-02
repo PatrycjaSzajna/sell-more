@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BestShop</title>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
@@ -16,197 +15,213 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <a href="/" class="logo">BestShop</a>
-        <nav class="page-nav">
-          <ul class="page-nav-list">
-            <li><a href="#">WHY US</a></li>
-            <li><a href="#">BENEFITS</a></li>
-            <li><a href="#">PRICES</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="whole-container">
+      <header class="header header__wrapper">
+        <div class="container">
+          <a href="/" class="logo">BestShop</a>
+          <input type="checkbox" id="menu" />
+          <label for="menu" class="menu-label"> </label>
 
-    <main>
-      <section class="containerMainSellMore">
-        <div class="containerMainSellMore_center">
-          <h1>Sell More!</h1>
-          <p>Open shop on ypur platform and increase your sales</p>
-          <a href="/" class="blueButton">Open your shop</a>
+          <nav class="page-nav header__navigation">
+            <ul class="page-nav-list header__list">
+              <li><a href="#">WHY US</a></li>
+              <li><a href="#">BENEFITS</a></li>
+              <li><a href="#">PRICES</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav> 
         </div>
-        <div class="containerImage">
-          <img class="backgroundImg" src="assets/Background.png" />
-        </div>
-      </section>
+      </header>
 
-      <section class="mostPopular">
-        <h2>The most popular sales platform in country</h2>
-        <div class="numbers">
-          <div class="redHead">
-            <div class="circle red"></div>
-            <p class="bold-text">100000+</p>
-            <p class="light-grey-text">daily entries</p>
+       <main class="container">
+        <section class="containerMainSellMore">
+          <div class="containerMainSellMore_center">
+            <h1>Sell More!</h1>
+            <p>Open shop on ypur platform and increase your sales</p>
+            <a href="/" class="blueButton">Open your shop</a>
           </div>
-          <div class="blueEye">
-            <div class="circle blue"></div>
-            <p class="bold-text">2000000+</p>
-            <p class="light-grey-text">seen products <br />every day</p>
+          <div class="containerImage">
+            <img class="backgroundImg" src="assets/Background.png" />
           </div>
-          <div class="greenPost">
-            <div class="circle green"></div>
-            <p class="bold-text">10000+</p>
-            <p class="light-grey-text">added posts daily</p>
-          </div>
-        </div>
-      </section>
-      <section class="benefits">
-        <div class="blocks-container laptop">
-          <div class="left">
-            <h2>Be always first</h2>
-            <p class="blocks-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-            <div class="line red"></div>
-          </div>
-          <div class="right">
-            <div class="square">
-              <img class="laptop-img" src="assets/Macbook.png" />
+        </section>
+
+        <section class="mostPopular">
+          <h2>The most popular sales platform in country</h2>
+          <div class="numbers">
+            <div class="redHead">
+              <div class="circle red"></div>
+              <p class="bold-text">100000+</p>
+              <p class="light-grey-text">daily entries</p>
+            </div>
+            <div class="blueEye">
+              <div class="circle blue"></div>
+              <p class="bold-text">2000000+</p>
+              <p class="light-grey-text">seen products <br />every day</p>
+            </div>
+            <div class="greenPost">
+              <div class="circle green"></div>
+              <p class="bold-text">10000+</p>
+              <p class="light-grey-text">added posts daily</p>
             </div>
           </div>
-        </div>
-
-        <div class="blocks-container telephone">
-          <div class="left">
-            <h2>Your shop is <br />where you are!</h2>
-            <p class="blocks-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-            <div class="line blue"></div>
-          </div>
-          <div class="right">
-            <div class="circle-telephone">
-              <img class="telephone-img" src="assets/iPhone.png" />
+        </section>
+        <section class="benefits">
+          <div class="blocks-container laptop">
+            <div class="left">
+              <h2>Be always first</h2>
+              <p class="blocks-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <div class="line red"></div>
+            </div>
+            <div class="right">
+              <div class="square">
+                <img class="laptop-img" src="assets/Macbook.png" />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="blocks-container trumpet">
-          <div class="left">
-            <h2>
-              Increase recognition <br />
-              your brand!
-            </h2>
-            <p class="blocks-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-            <div class="line green"></div>
+          <div class="blocks-container telephone">
+            <div class="left">
+              <h2>Your shop is <br />where you are!</h2>
+              <p class="blocks-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <div class="line blue"></div>
+            </div>
+            <div class="right">
+              <div class="circle-telephone">
+                <img class="telephone-img" src="assets/iPhone.png" />
+              </div>
+            </div>
           </div>
-          <div class="right">
-            <img class="trumpet-img" src="assets/Trumpet.png" />
-          </div>
-        </div>
-      </section>
 
-      <section class="pricing-box">
-        <h2>Pricing</h2>
-        <div class="packages">
-          <div class="basic">
-            <h3>Basic</h3>
-            <p>$0</p>
-            <ul>
-              <li>100 MB HDD</li>
-              <li>1 Subdomain</li>
-              <li>2 E-mails</li>
-              <li class="not-supported">Two years license</li>
-              <li class="not-supported">Full support</li>
-            </ul>
-            <a class="pricing-button red" href="#">Begin</a>
+          <div class="blocks-container trumpet">
+            <div class="left">
+              <h2>
+                Increase recognition <br />
+                your brand!
+              </h2>
+              <p class="blocks-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <div class="line green"></div>
+            </div>
+            <div class="right">
+              <img class="trumpet-img" src="assets/Trumpet.png" />
+            </div>
           </div>
-          <div class="professional">
-            <h3>Professional</h3>
-            <p>$25</p>
-            <small>Limited offer</small>
-            <ul>
-              <li>500 MB HDD</li>
-              <li>2 Subdomain</li>
-              <li>5 E-mails</li>
-              <li>One years license</li>
-              <li class="not-supported">Full support</li>
-            </ul>
-            <a class="pricing-button blue" href="#">Begin</a>
-          </div>
-          <div class="premium">
-            <h3>Premium</h3>
-            <p>$60</p>
-            <small>Limited offer</small>
-            <ul>
-              <li>2 GB HDD</li>
-              <li>5 Subdomain</li>
-              <li>20 E-mails</li>
-              <li>Two years license</li>
-              <li>Full support</li>
-            </ul>
-            <a class="pricing-button green" href="#">Begin</a>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="form-container">
-        
+        <section class="pricing-box">
+          <h2>Pricing</h2>
+          <div class="packages">
+            <div class="basic">
+              <div class="h3p">
+                <h3>Basic</h3>
+                <p>$0</p>
+              </div>
+
+              <ul>
+                <li>100 MB HDD</li>
+                <li>1 Subdomain</li>
+                <li>2 E-mails</li>
+                <li class="not-supported">Two years license</li>
+                <li class="not-supported">Full support</li>
+              </ul>
+              <a class="pricing-button red" href="#">Begin</a>
+            </div>
+            <div class="professional">
+              <div class="h3p">
+                <h3>Professional</h3>
+                <p>$25</p>
+                <small>Limited offer</small>
+              </div>
+              <ul>
+                <li>500 MB HDD</li>
+                <li>2 Subdomain</li>
+                <li>5 E-mails</li>
+                <li>One years license</li>
+                <li class="not-supported">Full support</li>
+              </ul>
+              <a class="pricing-button blue" href="#">Begin</a>
+            </div>
+            <div class="premium">
+              <div class="h3p">
+                <h3>Premium</h3>
+                <p>$60</p>
+                <small>Limited offer</small>
+              </div>
+              <ul>
+                <li>2 GB HDD</li>
+                <li>5 Subdomain</li>
+                <li>20 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+              </ul>
+              <a class="pricing-button green" href="#">Begin</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-container">
           <div class="left-side-form">
             <h1>Any questions?</h1>
             <h2>Leave your email addres or call us!</h2>
             <div class="form-icons">
-              <p class="info-email"><img src="assets/Mail Icon.svg"> info@bestshop.xyz</p>
-              <p class="telephone-number"><img src="assets/Phone Icon.svg">3 456 789</p>
-              
+              <div class="info-email">
+                <img src="assets/Mail Icon.svg" /> info@bestshop.xyz
+              </div>
+              <p class="telephone-number">
+                <img src="assets/Phone Icon.svg" />123 456 789
+              </p>
             </div>
           </div>
           <form>
-          <div class="main-form">
-            <label class="name-form" for="name">NAME</label>
-            <input type="text" id="name"/>
-            <label class="email-form">EMAIL</label>
-            <input type="email" id="e-mail"/>
-            <label class="checkbox">
-              <input class="greencheckbox" type="checkbox" />
-              <span></span>
-              <p>I hereby give consent for my personal data included in my
-              application to be processed for the purposes of the recruitment
-              process under the European Parliament’s and Council of the
-              European Union Regulation on the Protection of Natural Persons as
-              of 27 April 2016, with regard to the processing of personal data
-              and on the free movement of such data, and repealing Directive
-              95/46/EC (Data Protection Directive)</p>
-            </label>
-            <a href="#" class="send-button blue">Send</a>
+            <div class="main-form">
+              <label class="name-form" for="name">NAME</label>
+              <input type="text" id="name" />
+              <label class="email-form">EMAIL</label>
+              <input type="email" id="e-mail" />
+              <label class="checkbox">
+                <input class="greencheckbox" type="checkbox" />
+                <span></span>
+                <p>
+                  I hereby give consent for my personal data included in my
+                  application to be processed for the purposes of the
+                  recruitment process under the European Parliament’s and
+                  Council of the European Union Regulation on the Protection of
+                  Natural Persons as of 27 April 2016, with regard to the
+                  processing of personal data and on the free movement of such
+                  data, and repealing Directive 95/46/EC (Data Protection
+                  Directive)
+                </p>
+              </label>
+              <a href="#" class="send-button blue">Send</a>
+            </div>
+          </form>
+        </section>
+      </main> 
+
+       <footer class="footer-container">
+        <div class="footer">
+          <div class="logo-rights">
+            <a href="/" class="logo-footer">BestShop</a>
+            <p>© 2019 BestShop LTD, All Rights Reserved</p>
           </div>
-            
-        </form>
-      </section>
-    </main>
 
-    <footer class="footer-container">
-      <div class="footer">
-        <div class="logo-rights">
-          <a href="/" class="logo-footer">BestShop</a>
-          <p>© 2019 BestShop LTD, All Rights Reserved</p>
+          <div class="footer-images">
+            <img class="twitter-img" src="assets/Twitter.svg" />
+            <img class="facebook-img" src="assets/Facebook.svg" />
+          </div>
         </div>
-
-        <div class="footer-images">
-          <img class="twitter-img" src="assets/Twitter.svg" />
-          <img class="facebook-img" src="assets/Facebook.svg" />
-        </div>
-      </div>
-    </footer>
+      </footer> 
+    </div>
   </body>
 </html>

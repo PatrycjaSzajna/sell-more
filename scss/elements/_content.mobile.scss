@@ -1,0 +1,131 @@
+@media (max-width: 950px) {
+  .form-container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+
+    .left-side-form {
+      display: flex;
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+    }
+    form {
+      margin-top: 60px;
+    }
+  }
+}
+@media (max-width: 840px) {
+  .blocks-container {
+    flex-direction: column-reverse;
+    height: auto;
+
+
+
+    &.trumpet {
+      margin-bottom: 0;
+      flex-direction: column;
+      // width: 100%;
+      .left {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 49px;
+        padding-bottom: 52px;
+        h2 {
+        margin-left: 23px;
+        }
+      }
+      .right {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .left {
+      margin-top: 64px;
+      margin-bottom: 27px;
+      width: 100%;
+    }
+    .right {
+      margin-top: 50px;
+      margin-bottom: 54px;
+    }
+    &:nth-child(2) {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+  }
+  .pricing-box {
+    width: 100%;
+    .packages {
+      flex-direction: column;
+      align-items: center;
+      & > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+      }
+      .professional {
+        height: auto;
+      }
+    }
+  }
+
+  .h3p {
+    background-color: white;
+  }
+}
+
+
+@media (max-width: 841px){
+    .line {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+  .form-icons {
+    display: flex;
+    flex-direction: column;
+
+    .info-email {
+      margin-bottom: 19px;
+      margin-left: unset;
+    }
+    .telephone-number {
+      margin-left: unset;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .containerMainSellMore_center {
+    align-items: center;
+
+    .blueButton {
+      width: fit-content;
+      padding: 22px 75px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .numbers {
+    flex-direction: column;
+    align-items: center;
+    & > div {
+      margin: 30px auto;
+    }
+  }
+  .form-container h1 {
+    font-size: 28px;
+  }
+  .form-container .send-button {
+    align-self: center;
+  }
+}
+
