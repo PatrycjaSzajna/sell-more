@@ -397,7 +397,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  overflow: hidden;
 }
 
 main.container {
@@ -458,7 +457,7 @@ header {
 @media (max-width: 840px) {
   .page-nav {
     position: relative;
-    transform: translateX(170px);
+    transform: translateY(-400px);
     transition: transform 0.3s 0.1s ease-in-out;
   }
   .page-nav .page-nav-list {
@@ -965,6 +964,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 103px;
+  margin: 0 2%;
 }
 
 .packages .basic {
@@ -1171,7 +1171,6 @@ p {
   font-family: var(--fontSans);
   font-size: 12px;
   color: #95989a;
-  margin-left: 13px;
 }
 
 .checkbox input:checked + span {
@@ -1231,24 +1230,27 @@ p {
   .blocks-container.trumpet .left {
     width: 100%;
     margin: 0;
-    padding-left: 0;
-    padding-top: 49px;
-    padding-bottom: 52px;
-  }
-  .blocks-container.trumpet .left h2 {
-    margin-left: 23px;
+    padding: 49px 5% 52px 5%;
   }
   .blocks-container.trumpet .right {
     width: 100%;
     margin: 0;
   }
+  .blocks-container.telephone .left h2 {
+    margin-top: 34px;
+  }
+  .blocks-container .circle-telephone {
+    width: 19%;
+    margin-top: 128px;
+  }
+  .blocks-container .square {
+    margin-right: -73px;
+  }
   .blocks-container .left {
     margin-top: 64px;
-    margin-bottom: 27px;
     width: 100%;
   }
   .blocks-container .right {
-    margin-top: 50px;
     margin-bottom: 54px;
   }
   .blocks-container:nth-child(2) {
@@ -1269,18 +1271,44 @@ p {
     align-items: center;
     justify-content: space-around;
     height: auto;
+    width: 85%;
   }
   .pricing-box .packages .professional {
     height: auto;
+    width: 90%;
   }
 
   .h3p {
     background-color: white;
   }
+
+  .form-container .left-side-form {
+    width: 75%;
+  }
+  .form-container .form-icons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  form {
+    width: 75%;
+  }
+  form p {
+    margin-left: 20px;
+  }
 }
-@media (max-width: 841px) {
+@media (max-width: 840px) {
   .line {
     display: none;
+  }
+
+  .right {
+    width: unset;
+  }
+
+  .blocks-paragraph {
+    margin-top: 30px;
   }
 }
 @media (max-width: 650px) {
@@ -1294,6 +1322,10 @@ p {
   }
   .form-icons .telephone-number {
     margin-left: unset;
+  }
+
+  .blocks-paragraph {
+    margin-top: 50px;
   }
 }
 @media (max-width: 470px) {
@@ -1322,6 +1354,34 @@ p {
 
   .form-container .send-button {
     align-self: center;
+  }
+
+  .mostPopular h2 {
+    margin: 56px 8%;
+    font-size: 30px;
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+    margin-right: -98px;
+  }
+  .square .laptop-img {
+    width: 218%;
+  }
+
+  .blocks-container.telephone h2 {
+    margin-top: 26px;
+  }
+
+  .telephone .circle-telephone {
+    width: 35%;
+    margin-top: 102px;
+  }
+  .telephone .circle-telephone .telephone-img {
+    width: 130%;
+    top: 7px;
+    left: -1px;
   }
 }
 /* Stopka */

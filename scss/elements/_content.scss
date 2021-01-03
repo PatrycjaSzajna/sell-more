@@ -437,6 +437,7 @@
     display: flex;
     justify-content: center;
     gap: 103px;
+    margin: 0 2%;
   }
   
   .packages .basic {
@@ -640,7 +641,6 @@
     font-family: var(--fontSans);
     font-size: 12px;
     color: #95989a;
-    margin-left: 13px;
   }
   .checkbox input:checked + span {
     background-image: url("../assets/Checkmark.svg");

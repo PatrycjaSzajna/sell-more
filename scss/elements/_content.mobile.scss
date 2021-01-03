@@ -21,8 +21,6 @@
     flex-direction: column-reverse;
     height: auto;
 
-
-
     &.trumpet {
       margin-bottom: 0;
       flex-direction: column;
@@ -30,26 +28,30 @@
       .left {
         width: 100%;
         margin: 0;
-        padding-left: 0;
-        padding-top: 49px;
-        padding-bottom: 52px;
-        h2 {
-        margin-left: 23px;
-        }
+        padding: 49px 5% 52px 5%;
       }
       .right {
         width: 100%;
         margin: 0;
       }
     }
+    &.telephone .left h2 {
+      margin-top: 34px;
+    }
+    .circle-telephone {
+      width: 19%;
+      margin-top: 128px;
+    }
+
+    .square {
+      margin-right: -73px;
+    }
 
     .left {
       margin-top: 64px;
-      margin-bottom: 27px;
       width: 100%;
     }
     .right {
-      margin-top: 50px;
       margin-bottom: 54px;
     }
     &:nth-child(2) {
@@ -68,9 +70,11 @@
         align-items: center;
         justify-content: space-around;
         height: auto;
+        width: 85%;
       }
       .professional {
         height: auto;
+        width: 90%;
       }
     }
   }
@@ -78,13 +82,36 @@
   .h3p {
     background-color: white;
   }
+
+  .form-container {
+    .left-side-form {
+      width:75%;
+    }
+    .form-icons {
+      flex-direction: column;
+      gap:10px;
+      margin-top:8px;
+    }
+  }
+
+  form {
+    width: 75%;
+    p {
+      margin-left: 20px;
+    }
+  }
 }
 
-
-@media (max-width: 841px){
-    .line {
-        display: none;
-    }
+@media (max-width: 840px) {
+  .line {
+    display: none;
+  }
+  .right {
+    width: unset;
+  }
+  .blocks-paragraph {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -99,6 +126,9 @@
     .telephone-number {
       margin-left: unset;
     }
+  }
+  .blocks-paragraph {
+    margin-top: 50px;
   }
 }
 
@@ -127,5 +157,28 @@
   .form-container .send-button {
     align-self: center;
   }
+  .mostPopular h2 {
+    margin: 56px 8%;
+    font-size: 30px;
+  }
+  .square {
+    width: 100px;
+    height: 100px;
+    margin-right: -98px;
+    .laptop-img {
+      width: 218%;
+    }
+  }
+  .blocks-container.telephone h2 {
+    margin-top: 26px;
+  }
+  .telephone .circle-telephone {
+    width: 35%;
+    margin-top: 102px;
+    .telephone-img {
+      width: 130%;
+      top: 7px;
+      left: -1px;
+    }
+  }
 }
-
